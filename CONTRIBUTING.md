@@ -105,6 +105,24 @@ We need to add null checking before processing.
 
 **📌 For complete details, see [COMMENTS.md](COMMENTS.md)**
 
+## 🏗️ Architecture Rules
+
+To maintain Zenith's high performance and modularity, all contributors must follow these architectural constraints:
+
+### 1. Hook Ownership Rule (Mandatory)
+Zenith enforces a strict boundary between Core and Plugins.
+- **Core** owns only universal lifecycle hooks (`onMount`, `onUnmount`).
+- **Plugins** own their specific hooks (e.g., `beforeEach` in router, `useZenOrder` in content).
+- **Core must never import plugin code** or define plugin-specific types.
+
+### 2. Removability Principle
+A feature should be a plugin if it is not universally required. Any plugin must be completely removable without breaking the core build or runtime.
+
+### 3. Compile-Time Over Runtime
+Whenever possible, resolve logic in the compiler rather than the runtime. The runtime should remain as "dumb" and declarative as possible.
+
+---
+
 ## ❓ Questions?
 - Check existing [Issues](https://github.com/judahbsullivan/zenith/issues)
 - Review [README.md](../README.md) for project overview
@@ -113,4 +131,5 @@ We need to add null checking before processing.
 ---
 
 **Remember**: Contributing should be enjoyable! Don't hesitate to ask questions if anything is unclear.
+
 

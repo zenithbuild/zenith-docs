@@ -58,7 +58,7 @@ The paragraph above will update if *either* `items` or `taxRate` changes.
 
 While template expressions are usually enough, sometimes you want a variable in your script to be derived. You can do this by defining a getter or using a reactive effect.
 
-```javascript
+```html
 <script setup="ts">
   state score = 10
   

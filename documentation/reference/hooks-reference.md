@@ -34,6 +34,7 @@ Runs after every reactive update and DOM change.
 - **Callback**: `() => void`
 - **Example**:
   ```javascript
+  const syncScroll = () => { /* ... */ }
   zenOnUpdate(() => {
     syncScroll()
   })
@@ -44,6 +45,7 @@ Runs once just before the component is removed from the DOM.
 - **Callback**: `() => void`
 - **Example**:
   ```javascript
+  const subscription = { unsubscribe: () => {} }
   zenOnUnmount(() => {
     subscription.unsubscribe()
   })
@@ -63,7 +65,7 @@ While `zenOnMount` can be async, Zenith does not wait for it to resolve before f
 <script setup="ts">
   state loading = true
   zenOnMount(async () => {
-    await fetchData()
+    await fetch('/api/data')
     loading = false
   })
 </script>

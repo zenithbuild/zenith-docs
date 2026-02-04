@@ -300,16 +300,16 @@ Implement authentication guards for protected pages.
 </script>
 
 <template>
-  {#if isLoading}
+{#if isLoading}
     <div class="loading">
       <p>Verifying authentication...</p>
     </div>
-  {:else}
+{:else}
     <div class="dashboard">
       <h1>Welcome, {user.name}!</h1>
       <!-- Dashboard content -->
     </div>
-  {/if}
+{/if}
 </template>
 ```
 
@@ -367,11 +367,11 @@ Implement authentication guards for protected pages.
 </script>
 
 <template>
-  {#if isChecking}
+{#if isChecking}
     <div class="auth-checking">Loading...</div>
-  {:else if isAuthorized}
+{:else if isAuthorized}
     <slot />
-  {/if}
+{/if}
 </template>
 ```
 
@@ -526,14 +526,14 @@ Build complex filtering and pagination with query parameters.
       ← Prev
     </button>
     
-    {#each Array.from({ length: totalPages }, (_, i) => i + 1) as page}
+{#each Array.from({ length: totalPages }, (_, i) => i + 1) as page}
       <button 
         class="page-btn {page === currentPage ? 'active' : ''}"
         onclick={() => goToPage(page)}
       >
         {page}
       </button>
-    {/each}
+{/each}
     
     <button 
       class="page-btn" 
@@ -653,14 +653,14 @@ Automatically generate breadcrumbs from route path.
 
 <template>
   <nav class="breadcrumbs">
-    {#each breadcrumbs as crumb, index}
-      {#if crumb.isLast}
+{#each breadcrumbs as crumb, index}
+{#if crumb.isLast}
         <span class="current">{crumb.label}</span>
-      {:else}
+{:else}
         <ZenLink to="{crumb.path}">{crumb.label}</ZenLink>
         <span class="separator">/</span>
-      {/if}
-    {/each}
+{/if}
+{/each}
   </nav>
 </template>
 ```

@@ -147,10 +147,10 @@ src/pages/
 </script>
 
 <template>
-  {#if product}
+{#if product}
     <h1>{product.name}</h1>
     <p>{product.description}</p>
-  {/if}
+{/if}
 </template>
 ```
 

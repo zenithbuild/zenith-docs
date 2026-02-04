@@ -255,9 +255,9 @@ Access and react to query string changes:
   </div>
   
   <div class="products">
-    {#each products as product}
+{#each products as product}
       <div class="product-card">{product.name}</div>
-    {/each}
+{/each}
   </div>
 </template>
 ```
@@ -303,23 +303,23 @@ Handle dynamic segments like `/users/[id]/posts`:
 </script>
 
 <template>
-  {#if user}
+{#if user}
     <div class="user-profile">
       <h1>{user.name}'s Posts</h1>
       
       <ul class="posts-list">
-        {#each posts as post}
+{#each posts as post}
           <li>
             <ZenLink to="/users/{userId}/posts/{post.id}">
               {post.title}
             </ZenLink>
           </li>
-        {/each}
+{/each}
       </ul>
     </div>
-  {:else}
+{:else}
     <p>Loading...</p>
-  {/if}
+{/if}
 </template>
 ```
 
@@ -360,11 +360,13 @@ Build a reusable component that reacts to route changes:
 Usage:
 
 ```html
+<template>
 <RouteAware>
-  {#slot route}
+{#slot route}
     <p>Current path: {route.path}</p>
-  {/slot}
+{/slot}
 </RouteAware>
+</template>
 ```
 
 ---

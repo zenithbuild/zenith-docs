@@ -161,6 +161,10 @@ console.log(route.query);   // { color: "blue", size: "large" }
     productId = params.id;
     loadProduct(productId);
   });
+  
+  function loadProduct(id) {
+    console.log('Loading product:', id);
+  }
 </script>
 ```
 
@@ -180,6 +184,9 @@ function shareCurrentPage() {
 ```javascript
 function trackPageView() {
   const { path, params, query } = window.__zenith_router.getRoute();
+  
+  // Mock analytics
+  const analytics = window.analytics || { page: () => {} };
   
   analytics.page({
     path,
@@ -244,13 +251,14 @@ unsubscribe();
     const unsubscribe = window.__zenith_router.onRouteChange((route) => {
       // Google Analytics
       if (window.gtag) {
-        gtag('event', 'page_view', {
+        window.gtag('event', 'page_view', {
           page_path: route.path,
           page_title: document.title
         });
       }
       
       // Custom analytics
+      const analytics = window.analytics || { track: () => {} };
       analytics.track('page_view', { path: route.path });
     });
     
@@ -378,13 +386,13 @@ window.__zenith_router.isActive('/about');       // false
 ```html
 <template>
   <aside class="sidebar">
-    {#if window.__zenith_router.isActive('/blog')}
+{#if window.__zenith_router.isActive('/blog')}
       <BlogSidebar />
-    {:else if window.__zenith_router.isActive('/docs')}
+{:else if window.__zenith_router.isActive('/docs')}
       <DocsSidebar />
-    {:else}
+{:else}
       <DefaultSidebar />
-    {/if}
+{/if}
   </aside>
 </template>
 ```

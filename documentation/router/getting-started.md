@@ -243,11 +243,13 @@ Use `ZenLink` for all internal navigation:
 <ZenLink to="/products" prefetch>Products</ZenLink>
 
 <!-- Dynamic links -->
+<template>
 {#each products as product}
   <ZenLink to="/products/{product.id}">
     {product.name}
   </ZenLink>
 {/each}
+</template>
 ```
 
 ## Verification Checklist

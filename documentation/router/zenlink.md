@@ -219,7 +219,7 @@ Timeline:
 
 <template>
   <div class="posts-grid">
-    {#each posts as post}
+{#each posts as post}
       <article class="post-card">
         <h3 class="post-title">{post.title}</h3>
         <p class="post-excerpt">{post.excerpt}</p>
@@ -227,7 +227,7 @@ Timeline:
           Read More →
         </ZenLink>
       </article>
-    {/each}
+{/each}
   </div>
 </template>
 ```
@@ -253,14 +253,14 @@ Timeline:
 
 <template>
   <nav class="breadcrumbs">
-    {#each breadcrumbs as crumb, index}
-      {#if index < breadcrumbs.length - 1}
+{#each breadcrumbs as crumb, index}
+{#if index < breadcrumbs.length - 1}
         <ZenLink to="{crumb.path}">{crumb.label}</ZenLink>
         <span class="breadcrumb-separator">/</span>
-      {:else}
+{:else}
         <span class="breadcrumb-current">{crumb.label}</span>
-      {/if}
-    {/each}
+{/if}
+{/each}
   </nav>
 </template>
 ```

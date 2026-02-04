@@ -266,7 +266,7 @@ Full working examples demonstrating the Zenith Router in real-world scenarios.
             Settings
           </ZenLink>
         </nav>
-        <button class="logout-btn" onclick={logout}>Logout</button>
+        <button class="logout-btn" on:click="logout">Logout</button>
       </aside>
       
       <main id="zenith-outlet" class="main">
@@ -325,18 +325,26 @@ Full working examples demonstrating the Zenith Router in real-world scenarios.
     const response = await fetch(`/api/products?${new URLSearchParams(filters)}`);
     products = await response.json();
   }
+
+  function handleCategoryChange(e) {
+    updateFilter('category', e.target.value);
+  }
+
+  function handleSortChange(e) {
+    updateFilter('sort', e.target.value);
+  }
 </script>
 
 <template>
   <div class="products-page">
     <aside class="filters">
-      <select onchange={(e) => updateFilter('category', e.target.value)}>
+      <select on:change="handleCategoryChange">
         <option value="">All Categories</option>
         <option value="electronics">Electronics</option>
         <option value="clothing">Clothing</option>
       </select>
       
-      <select onchange={(e) => updateFilter('sort', e.target.value)}>
+      <select on:change="handleSortChange">
         <option value="newest">Newest</option>
         <option value="price-asc">Price: Low to High</option>
         <option value="price-desc">Price: High to Low</option>

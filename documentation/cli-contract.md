@@ -30,3 +30,6 @@ Invariant: CLI must not implement compiler semantics, runtime behavior, or hidde
 `zenith build` emits deterministic static artifacts under `dist/`, including page HTML and hashed assets.
 
 Canonical source: `/Users/judahsullivan/Personal/zenith/zenith-cli/CLI_CONTRACT.md`.
+
+See also:
+- [HMR V1 Contract](/docs/contracts/hmr-v1-contract)

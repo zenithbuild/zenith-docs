@@ -61,6 +61,6 @@ A standard Zenith workspace follows a clean, predictable path:
 
 ## 🌌 Deep Dive: Why Bun?
 
-Zenith is built from the ground up to leverage Bun's incredible speed. From the development server's HMR to the ultra-fast compiler, every part of the Zenith engine is tuned for the Bun runtime. While we aim for compatibility, the true Zenith experience is found in the Bun ecosystem.
+Zenith is built from the ground up to leverage Bun's incredible speed. From the development feedback loop to the ultra-fast compiler, every part of the Zenith engine is tuned for the Bun runtime. While we aim for compatibility, the true Zenith experience is found in the Bun ecosystem.
 
 **Next Step**: [Create your first component](../getting-started/first-component.md)

@@ -7,6 +7,7 @@
     "/docs/contracts/core-contract",
     "/docs/contracts/create-contract",
     "/docs/contracts/dsl-syntax",
+    "/docs/contracts/hmr-v1-contract",
     "/docs/contracts/hydration-contract",
     "/docs/contracts/ir-envelope",
     "/docs/contracts/navigation",
@@ -38,6 +39,7 @@
     "/docs/zenith-contract",
     "/docs/cli-contract",
     "/docs/install-compatibility",
+    "/docs/routing/route-protection",
     "/blog/routing-awareness",
     "/blog/runtime-expression-integrity"
   ]

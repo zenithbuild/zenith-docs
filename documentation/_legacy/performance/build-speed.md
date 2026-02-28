@@ -20,7 +20,7 @@ A tribute to speed, we're proud to profess.
 Zenith's performance isn't an afterthought; it's the foundation. We achieve industry-leading build speeds through several key strategies:
 
 ### 1. In-Memory Compilation (Dev Mode)
-In development, Zenith compiles your `.zen` files on-the-fly directly in memory. There are no intermediate build artifacts to write to disk, which means HMR (Hot Module Replacement) happens in the blink of an eye.
+In development, Zenith compiles your `.zen` files on-the-fly directly in memory. There are no intermediate build artifacts to write to disk.
 
 ### 2. Static Analysis
 Zenith's compiler is "smart." It analyzes your templates to distinguish between static content (which will never change) and dynamic bindings. It constant-folds and hoists the static parts, so they are never even looked at during the runtime update cycle.
@@ -35,7 +35,7 @@ Zenith is built specifically for the [Bun](https://bun.sh) ecosystem. By leverag
 | Operation | Zenith (Bun) | Typical Webpack/Vite |
 | :--- | :--- | :--- |
 | Initial Dev Start | ~100ms | 1s - 5s |
-| HMR Update | ~10ms | 100ms - 500ms |
+| Dev CSS/Reload Cycle | Legacy estimate | 100ms - 500ms |
 | Production Build | < 2s | 10s - 60s |
 
 ---

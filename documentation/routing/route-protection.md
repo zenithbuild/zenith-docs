@@ -67,13 +67,10 @@ They must return a canonical `RouteResult`:
   }
 </script>
 
-<script>
-  // Server-side loaded data is available synchronously in the component
-  const { user, metrics } = params;
-</script>
-
-<h1>Welcome, {user.name}</h1>
-<p>Revenue: {metrics.revenue}</p>
+<main>
+  <h1>Welcome, {params.user.name}</h1>
+  <p>Revenue: {params.metrics.revenue}</p>
+</main>
 ```
 
 ## The Context (`ctx`) Object

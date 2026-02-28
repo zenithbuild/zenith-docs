@@ -11,7 +11,7 @@
         "title": "Contracts",
         "summary": "Normative framework contracts and invariants.",
         "order": 10,
-        "count": 18
+        "count": 19
       },
       {
         "slug": "syntax",
@@ -54,6 +54,13 @@
         "summary": "",
         "order": null,
         "count": 3
+      },
+      {
+        "slug": "routing",
+        "title": "Routing",
+        "summary": "",
+        "order": null,
+        "count": 1
       }
     ]
   },
@@ -202,6 +209,33 @@
       ],
       "source_path": "documentation/contracts/dsl-syntax.md",
       "url": "/docs/contracts/dsl-syntax",
+      "category": "contracts",
+      "category_title": "Contracts",
+      "category_order": 10,
+      "category_path": [
+        "contracts"
+      ],
+      "category_titles": [
+        "Contracts"
+      ],
+      "doc_order": null,
+      "level": null,
+      "hidden": false,
+      "prerequisites": []
+    },
+    {
+      "kind": "doc",
+      "slug": "contracts/hmr-v1-contract",
+      "title": "HMR V1 Contract",
+      "status": "canonical",
+      "tags": [
+        "contracts",
+        "hmr",
+        "dev-server",
+        "runtime"
+      ],
+      "source_path": "documentation/contracts/hmr-v1-contract.md",
+      "url": "/docs/contracts/hmr-v1-contract",
       "category": "contracts",
       "category_title": "Contracts",
       "category_order": 10,
@@ -1008,6 +1042,33 @@
       "category_path": [],
       "category_titles": [],
       "doc_order": null,
+      "level": null,
+      "hidden": false,
+      "prerequisites": []
+    },
+    {
+      "kind": "doc",
+      "slug": "routing/route-protection",
+      "title": "Route Protection (guard/load)",
+      "status": "canonical",
+      "tags": [
+        "routing",
+        "security",
+        "guard",
+        "load"
+      ],
+      "source_path": "documentation/routing/route-protection.md",
+      "url": "/docs/routing/route-protection",
+      "category": "routing",
+      "category_title": "Routing",
+      "category_order": null,
+      "category_path": [
+        "routing"
+      ],
+      "category_titles": [
+        "Routing"
+      ],
+      "doc_order": 50,
       "level": null,
       "hidden": false,
       "prerequisites": []

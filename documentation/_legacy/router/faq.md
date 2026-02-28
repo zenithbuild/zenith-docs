@@ -104,7 +104,7 @@ window.__zenith_router.navigate('/about');
 
 ## HMR Considerations
 
-During development, Zenith may use full page reloads for safety. This is expected and doesn't affect production.
+This page is legacy content. For active development behavior and endpoint guarantees, use the canonical [HMR V1 Contract](/docs/contracts/hmr-v1-contract).
 
 ---
 

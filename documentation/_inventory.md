@@ -27,6 +27,7 @@ Definition of Done:
 | contracts/ssr-transport | SSR Transport Contract | contract | keep | Inline payload and forbidden channels |
 | contracts/navigation | Navigation Contract | contract | keep | Hard reload default and opt-in marker |
 | contracts/security-drift-gates | Security and Drift Gates | contract | keep | Security and determinism gates |
+| contracts/hmr-v1-contract | HMR V1 Contract | contract | keep | Canonical dev endpoint and css update contract |
 | contracts/no-magic | No Magic Contract | contract | keep | Explicit behavior only |
 | contracts/dsl-syntax | DSL Syntax Contract | contract | keep | Event binding and expression rules |
 | contracts/server-data | Server Data Contract | contract | keep | Server export + serialization rules |

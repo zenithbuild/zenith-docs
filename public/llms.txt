@@ -10,6 +10,7 @@ Start here (ordered):
   - /docs/contracts/core-contract
   - /docs/contracts/create-contract
   - /docs/contracts/dsl-syntax
+  - /docs/contracts/hmr-v1-contract
   - /docs/contracts/hydration-contract
   - /docs/contracts/ir-envelope
   - /docs/contracts/navigation
@@ -47,6 +48,8 @@ Start here (ordered):
   - /docs/zenith-contract
   - /docs/cli-contract
   - /docs/install-compatibility
+- Routing:
+  - /docs/routing/route-protection
 
 Machine-readable:
 - /ai/docs.manifest.json

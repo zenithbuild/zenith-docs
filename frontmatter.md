@@ -10,7 +10,7 @@ title: "Page Title"
 status: "canonical" # canonical | draft | deprecated | internal | archived
 description: "Short summary of the page contract." # recommended
 version: "0.3" # optional (use either version or since)
-since: "0.5.0-beta.2.13" # optional (use either since or version)
+since: "0.5.0-beta.2.19" # optional (use either since or version)
 last_updated: "2026-02-22" # recommended
 tags: ["routing", "ssr", "contracts"] # optional, if present must be an array
 ---

@@ -370,7 +370,7 @@ Dynamic lists require runtime DOM creation. This is an **accepted exception** to
 2. Move IR types, Output types, Invariant definitions
 3. Update imports in `@zenithbuild/core`
 
-### Phase 2: Compiler Extraction (v1.4.0)
+### Phase 2: Compiler Extraction (v0.5.0-beta.2.19)
 
 1. Create `@zenithbuild/compiler` package
 2. Move parse/, transform/, validate/, finalize/

@@ -11,7 +11,7 @@
         "title": "Contracts",
         "summary": "Normative framework contracts and invariants.",
         "order": 10,
-        "count": 19
+        "count": 20
       },
       {
         "slug": "syntax",
@@ -209,6 +209,34 @@
       ],
       "source_path": "documentation/contracts/dsl-syntax.md",
       "url": "/docs/contracts/dsl-syntax",
+      "category": "contracts",
+      "category_title": "Contracts",
+      "category_order": 10,
+      "category_path": [
+        "contracts"
+      ],
+      "category_titles": [
+        "Contracts"
+      ],
+      "doc_order": null,
+      "level": null,
+      "hidden": false,
+      "prerequisites": []
+    },
+    {
+      "kind": "doc",
+      "slug": "contracts/editor-integration",
+      "title": "Editor Integration Contract",
+      "status": "canonical",
+      "tags": [
+        "contracts",
+        "editor",
+        "lsp",
+        "snippets",
+        "diagnostics"
+      ],
+      "source_path": "documentation/contracts/editor-integration.md",
+      "url": "/docs/contracts/editor-integration",
       "category": "contracts",
       "category_title": "Contracts",
       "category_order": 10,

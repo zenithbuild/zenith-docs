@@ -35,6 +35,12 @@ Controlled props override internal state.
 - Unknown events are warnings (not hard errors), emitted by compiler diagnostics.
 - Avoid forbidden syntax in docs examples.
 
+## File Size Limit
+- Treat `500` lines as a hard per-file limit for source files you create or edit.
+- Do not grow a file past `500` lines unless the user explicitly approves that exception.
+- If a change approaches the limit, split it into smaller modules/helpers first.
+- `2k+` line files are not acceptable as an output target for new Zenith work.
+
 ## Canonical DOM + Environment Rules (Non-Negotiable)
 - Use `ref<T>()` for DOM access in `.zen` scripts.
 - Do not use `querySelector`, `querySelectorAll`, or `getElementById` in `.zen` scripts.

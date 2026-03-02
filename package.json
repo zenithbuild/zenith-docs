@@ -15,12 +15,12 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@zenithbuild/bundler": "file:../zenith-bundler",
-    "@zenithbuild/cli": "file:../zenith-cli",
-    "@zenithbuild/compiler": "file:../zenith-compiler",
-    "@zenithbuild/core": "file:../zenith-core",
-    "@zenithbuild/router": "file:../zenith-router",
-    "@zenithbuild/runtime": "file:../zenith-runtime"
+    "@zenithbuild/bundler": "^0.6.5",
+    "@zenithbuild/cli": "^0.6.5",
+    "@zenithbuild/compiler": "^0.6.5",
+    "@zenithbuild/core": "^0.6.5",
+    "@zenithbuild/router": "^0.6.5",
+    "@zenithbuild/runtime": "^0.6.5"
   },
   "devDependencies": {
     "@types/bun": "latest",

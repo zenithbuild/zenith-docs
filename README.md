@@ -1,3 +1,9 @@
+> **Moved:** Zenith core development now lives in **zenithbuild/framework**.
+>
+> New home: https://github.com/zenithbuild/framework/tree/master/docs
+>
+> This repository is archived and kept read-only for history.
+
 # Zenith Documentation
 
 The canonical source of truth for Zenith documentation, changelogs, and release alignment.
